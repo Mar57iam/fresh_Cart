@@ -6,16 +6,18 @@ import { Product } from "@/app/_Interfaces/products.type";
 import AddToCart from "@/app/(Cart)/cart/AddToCart";
 import FavBtn from "./FavBtn";
 
-
- 
 interface ProductsProps {
   products: Product[];
 }
 
-const ProductCard = memo(({ product }: { product: Product }) => {
+
+const ProductCardComponent = ({ product }: { product: Product }) => {
   return (
     <Card className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
-      <Link href={`/products/${product._id}/${product.category.name}`} className="block flex-grow">
+      <Link
+        href={`/products/${product._id}/${product.category.name}`}
+        className="block flex-grow"
+      >
         <div className="relative w-full h-48 sm:h-56">
           <Image
             src={product.imageCover}
@@ -51,12 +53,18 @@ const ProductCard = memo(({ product }: { product: Product }) => {
       <AddToCart productId={product._id} />
     </Card>
   );
-});
+};
+
+
+ProductCardComponent.displayName = "ProductCard";
+
+
+const ProductCard = memo(ProductCardComponent);
 
 export default memo(function Products({ products }: ProductsProps) {
   return (
     <div className="w-[93%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 p-6">
-      {products.map(product => (
+      {products.map((product) => (
         <ProductCard key={product._id} product={product} />
       ))}
     </div>

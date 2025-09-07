@@ -1,3 +1,4 @@
+import { ShippingAddress } from "@/app/_Interfaces/Cart.types";
 import Cookies from "js-cookie";
 import { toast } from "react-toastify";
 
@@ -104,7 +105,7 @@ export async function deleteCartItem(cartItemId: string) {
     console.error(error);
   }
 }
-export async function checkout(id: string, url: string, formData: any) {
+export async function checkout(id: string, url: string, formData:ShippingAddress) {
   const token = Cookies.get("token");
 
   try {

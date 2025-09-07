@@ -32,3 +32,10 @@ export interface CartResponse {
   cartId: string
   data: CartData
 }
+
+
+export interface ShippingAddress {
+  details: string;
+  phone: string;
+  city: string;
+}

@@ -8,7 +8,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { 
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -100,7 +99,8 @@ export default function LoginForm() {
           {errorMessage && <p className="bg-red-500 text-center text-white p-2 rounded text-sm mt-2">{errorMessage}</p>}
 
     <Link href="/register" className="text-sm text-white text-[14px] font-bold hover:underline">
-      Don't have an account? Register Now
+     <p>Don&apos;t have an account?</p>
+
     </Link>
         </form>
       </Form>

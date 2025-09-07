@@ -20,7 +20,7 @@ export interface Product {
   images: string[];
   imageCover: string;
   ratingsQuantity?: number;
-  subcategory: any[]; 
+  subcategory: Subcategory[]; 
   brand: Brand;
   category: Category;
 }
@@ -39,3 +39,11 @@ type Category = {
   image: string;
   slug: string;
 }
+
+
+type Subcategory = {
+  _id: string;
+  title: string;
+  updatedAt: string; 
+};
+

@@ -16,6 +16,8 @@ export default async function Home({ searchParams }: { searchParams?: { page?: s
 
    const page = searchParams?.page ? parseInt(searchParams.page) : 1;
   const allProducts = await getProducts(page);
+  console.log(allProducts);
+  
 
   return (
     <div>
