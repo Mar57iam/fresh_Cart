@@ -3,7 +3,7 @@ import { cookies } from 'next/headers'
 import React from 'react'
 import ProductCard from './ProductCard';
 import { getProducts } from '@/lib/productsFn';
-import Link from 'next/link';
+
 import { ProductsPagination } from './Ppagination';
 
 export default async function Home({ searchParams }: { searchParams?: { page?: string } }) {

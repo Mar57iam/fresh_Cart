@@ -3,8 +3,6 @@
 import React from "react"
 import Image from "next/image"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Button } from "@/components/ui/button"
-import { Minus, Plus, Trash2 } from "lucide-react"
 import Qbtn from "./Qbtn"
 import { CartResponse } from "@/app/_Interfaces/Cart.types"
 import DelBtn from "./DelBtn"

@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Card, CardContent, CardFooter } from "@/components/ui/card" 
-import { Heart } from 'lucide-react'
+import {  CardContent } from "@/components/ui/card" 
 import { Button } from '@/components/ui/button'
 import { Product } from '@/app/_Interfaces/products.type'
 import FavBtn from '../../FavBtn'

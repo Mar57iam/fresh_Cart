@@ -1,7 +1,6 @@
 import React from 'react'
 import { cookies } from 'next/headers';
 import CartTable from './CartTable';
-import CheckoutPage from '@/app/checkout/page';
 import { redirect } from 'next/dist/client/components/navigation';
 
 

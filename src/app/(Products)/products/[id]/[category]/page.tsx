@@ -1,6 +1,5 @@
 import React from 'react'
 import SProduct from './SProduct'
-import { Product } from '@/app/_Interfaces/products.type'
 import Products from '../../ProductCard';
 import { getProductById, getProducts } from '@/lib/productsFn';
 

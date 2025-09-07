@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { useAuth } from '../../../Hooks/useAuth'
-import { Menu, X } from 'lucide-react' // أيقونات
+import { Menu, X } from 'lucide-react' 
 
 export default function Navbar() {
   const { token, logOut } = useAuth()

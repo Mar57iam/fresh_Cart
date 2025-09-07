@@ -1,10 +1,8 @@
 import React, { memo } from "react";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { Heart } from "lucide-react";
 import Link from "next/link";
 import { Product } from "@/app/_Interfaces/products.type";
-import dynamic from 'next/dynamic';
 import AddToCart from "@/app/(Cart)/cart/AddToCart";
 import FavBtn from "./FavBtn";
 

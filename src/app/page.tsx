@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button"
+
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers'
 import Home from "./(Products)/products/page";
